@@ -1,0 +1,187 @@
+<!doctype html>
+<html>chất
+<head>
+<meta charset="utf-8">
+<title>Bai Cuoi Mon Sieu Dinh</title> 
+	<link rel="stylesheet" href="CSS/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</head>
+<body>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Lên</button>
+	<div id="wrapper">
+	  <header>
+			<div class="container">
+				<div class="header-main">
+					<div class="logo">
+						<a>
+						<img src="img/Asset 2.svg" alt="None">
+						</a>				
+					</div>
+						
+					<nav class="menu">
+						<ul>
+							<li><a href="#">Trang đầu tiên</a></li>
+							<li><a href="#section2">Về Mình</a></li>
+							<li><a href="#">Hồng Sơn</a>
+								<ul class="sub-menu">
+									<li><a href="">Cute</a></li>
+								</ul>
+							</li>
+							<li><a href="#section3">Portfolio</a></li>
+							<li><a href="#section1">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>		
+		</header>
+		<a>
+			<img src="img/Cover.jpg" alt="none" width="100%"  height="100%" >
+		</a>
+	  <main class="banner" id="section2" >
+				<div> </div>
+				<div class="content">
+					<h3>Hi,mình là Hồng Sơn và mình là</h3>
+<h1>GRAPHIC DESIGnER</h1>
+					<p>mình 21 tuổi, đến từ Lâm Đồng, hiện đang học và làm việc ở Thành phố Hồ Chí Minh và mình thích ăn bánh chưng.</p>
+					<p>bắt đầu với nghề từ năm 2018 thành lập Cà Rốt tới giờ cũng hơn 27.000 follows và các bạn có thể xem qua</p><br>
+					
+					<a href="https://www.facebook.com/CarrotZone/" target="_blank">Xem Page</a>
+					<a href="https://www.facebook.com/hongson.artwork" target="_blank">hoặc Facebook của mình</a>
+					<a href="https://www.instagram.com/hongson.artwork" target="_blank">hoặc Instagram của mình</a>
+				</div>
+		<img src="img/Untitled-1.jpg" alt="none" width="100%"  height="auto" >
+	<div class="artwork" id="section3">
+		<h1>Portfolio</h1>
+		<br>
+			<div class="box">
+				<img src="img/199678827_885491662180076_5508502113343741477_n.jpeg" alt="" width="250px" >
+				<img src="img/127054136_765528570843053_8211182321891553837_n.jpeg" alt="" width="250px" >
+				<img src="img/132897267_786497832079460_7006303078130173899_n.jpeg" alt="" width="250px" >
+				<img src="img/123361389_754308401965070_8119051108785003987_n.jpeg" alt="" width="250px" >
+				<img src="img/187099527_895422557853653_2262485018029089970_n.jpeg" alt="" width="250px" >
+				<img src="img/160862905_833096147419628_2334933477986674767_n.jpeg" alt="" width="250px" >
+				<img src="img/116706250_685591715503406_1971050447685275764_n.jpeg" alt="" width="250px" >
+				<img src="img/211113520_896921431037099_6735021086650643624_n.jpeg" alt="" width="250px" >
+				
+			</div>
+		
+			
+	</div>
+		  
+	    <div class="contact" id="section1">
+			 
+		  <div class="register">
+			  <h31>Contact form</h31>
+			<form>
+				<table>
+					<tr>
+						<td>
+							<input type="Text" name="ten" value="" placeholder="Tên" required>
+						</td>
+						<td>
+							<input type="Text" name="namsinh" value="" placeholder="Năm sinh" required>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<input type="mail" name="Email" value="" placeholder="Email" required>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<input type="text" name="sdt" value="" placeholder="Số điện thoại" required>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<select name="select" id="select">
+								<option value="">Chọn danh mục cần thiết kế</option>
+                            <option value="">---</option>
+                            <option value="branding">Branding</option>
+                            <option value="poster">Poster</option>
+                            <option value="Package">Package</option>
+                            <option value="Banner">Banner/Artwork</option>
+                            <option value="3d">3D Modeling</option>
+                            <option value="lyric">Video Lyric</option>
+                            <option value="visual">Visual</option>
+                            <option value="edit">Edit Video</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<input type="Text" name="noidung" value="" placeholder="Mô tả" required>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<input type="checkbox" name="Checkbox" value="" required> <span>Tiền bạc không thành vấn đề</span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<button type="submit">Gửi yêu cầu</button>
+						</td>
+					</tr>
+					
+				</table>
+				
+			</form>
+			 
+			  
+		</div>
+			
+</div>
+      </main>
+		
+	</div>
+		<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+		</script>
+
+</body>
+</html>
