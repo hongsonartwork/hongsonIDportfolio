@@ -1,0 +1,279 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@900&display=swap');
+
+
+*{
+	margin: 0;
+	pading: 0;
+	box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+	font-family: 'Nunito Sans', sans-serif;
+	background-color: black;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100%;
+background-position: center;
+	align-content: center;
+}
+
+#wrapper{
+	width: 100%;
+	margin: 0 auto;
+}
+.container{
+	width:1320px;
+	margin: 0 auto;
+}
+.body a{
+	padding-top: -50px;
+}
+
+header{
+	width:100%;
+	padding-top:50px;
+	padding-left: 40px;
+	position: absolute;
+	z-index: 1;
+}
+.header-main{
+	display: flex;
+	align-content: Center;
+	align-items: center;
+	padding-left: 100px;
+}
+.logo{
+	width: 10%;
+	padding-top:0px;  
+	display: flex;
+	justify-content: flex-end;
+}
+.logo a{
+	width: 50%;
+	padding-top: 20px;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	
+}
+.menu{
+	text-transform: uppercase;
+	width: 70%;
+}
+.menu ul{
+	height:50px;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	
+	justify-content: center;
+}
+.menu ul li {
+	margin: 0 30px;
+}
+.menu ul li a{;
+	text-decoration: none;
+	
+}
+.sub-menu{
+	
+	position: absolute;
+	flex-direction: column;
+	Width:10px;
+	Top:20px;
+	visibility: hidden;
+}
+.menu ul{
+	list-style: None;
+	display: flex;
+	justify-content: center;
+}
+.menu ul li{
+	border-left: 1px; solid :white;
+	position: relative;
+}
+.menu ul li:first-child{
+	border:none;
+}
+.menu ul li a{
+	Color:white;
+	text-decoration: None;
+	display: Block;
+}
+.sub-menu li{
+	padding: 50px;
+
+}
+.menu ul li:hover .sub-menu{
+	visibility: visible;
+}
+.banner{
+	padding-top: -5px;
+	margin-top: -5px;
+	width:100%;
+	height: 100vh;
+	position: relative;
+}
+.content{
+	position: absolute;
+	top:50%;
+	left:35%;
+	transform: translate(-50%,-50%);
+	text-align:left;
+}
+
+.content h3{
+	font-size: 20px;
+	color:white;
+	margin-bottom:10px;
+}
+.content h1{
+	text-transform: uppercase;
+	font-size:40px;
+	letter-spacing: 2px;
+	color:rgba(255,223,0,1.00);
+	line-height: 50px;
+}
+.content p{
+	font-size: 10px;
+	color:white;
+	line-height: 20px;
+}
+.content a{
+	font-size: 10px;
+	line-height: 0px; 
+  background-color: #f44336;
+	border-radius: 5px;;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+ 
+.btn{
+	display:inline-block;
+	margin-top:20px;
+	padding:3px 15px;
+	border:1px solid white;
+	color:white;
+	text-decoration: none;
+	border-radius: 20px;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: white; /* Set a background color */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: red; 
+color: White;/* Add a dark-grey background on hover */
+}
+#section1 {
+  height: 600px;
+}
+
+#section2 {
+  height: 600px;
+}
+.artwork{
+	width: 100%;
+	margin:0 auto;
+	background: black;
+	padding-left: 235px;
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+}
+.box{
+	padding: 20px;
+}
+h1{
+	color: White;
+	font-size: 50px;
+	
+}
+.contact{
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+
+	
+	
+}
+.register{
+	width: 100%;
+	
+}
+h31{
+	color: white;
+	font-size: 50px;
+	padding-left: 230px;
+}
+td{
+	padding: 10px;}
+table{
+	padding-left: 235px;
+}
+
+input{
+	width: 100%;
+	padding: 10px 0px 10px 5px;
+	box-sizing:border-box;
+	outline: None;
+	color:white;
+	padding-left: 15px;
+	background: transparent;
+	Border: 1px solid white;
+	border-radius: 8px;
+}
+
+input[type="checkbox"]{
+	width: 24px;
+	float: left;
+}
+span{
+	font-size: 12px;
+	align-content: center;
+	float: left;
+	padding-left: 10px;
+	margin-top: -2px;
+	color: White; 
+}
+input Button{
+	width: 100%;
+	padding: 10px;
+	background: White;
+	border: None;
+	border-radius: 20px;
+}
+Select{
+	width: 100%;
+	Height:30px;
+	
+}
+Button:hover{
+	background: Black;
+	Color:white;
+	cursor: pointer;
+}
+
+
